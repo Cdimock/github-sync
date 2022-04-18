@@ -23,6 +23,8 @@ then
   echo "Now: $UPSTREAM_REPO"
 fi
 
+git config --global --add safe.directory /github/workspace
+
 echo "UPSTREAM_REPO=$UPSTREAM_REPO"
 echo "BRANCHES=$BRANCH_MAPPING"
 
